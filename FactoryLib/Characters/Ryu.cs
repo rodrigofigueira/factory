@@ -6,11 +6,14 @@ namespace FactoryLib.Characters
     {
         public string Name => "Ryu";
 
-        public Move AntiAir()
+        public string ImgMain => @"https://media.tenor.com/qTaCrewuaG0AAAAi/float-like-a-butterfly-sting-like-a-bee.gif";
+
+        public Move DragonPunch()
         {
             return new Move
             {
-                Name = "Roooooooriuken"
+                Name = "Shoryuken",
+                ImagePath = @"https://media.tenor.com/VvVEu48lQGQAAAAi/street-fighter.gif"
             };                
         }
 
@@ -18,7 +21,8 @@ namespace FactoryLib.Characters
         {
             return new Move
             {
-                Name = "Hadouken"
+                Name = "Hadouken",
+                ImagePath = "https://media.tenor.com/5wdslJBsaVcAAAAC/ryu-street-fighter.gif"
             };
         }
     }

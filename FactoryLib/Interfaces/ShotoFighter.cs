@@ -3,7 +3,8 @@
     public interface ShotoFighter
     {
         public string Name { get; }
+        public string ImgMain { get; }
         public Move Fireball();
-        public Move AntiAir();
+        public Move DragonPunch();
     }
 }

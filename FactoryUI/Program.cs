@@ -10,6 +10,7 @@ namespace FactoryUI
         [STAThread]
         static void Main()
         {
+            //todo: ver uma forma externa
             Game[] games = new Game[] {
                 new Game{ Name="Street Fighter",
                           FightersName = new string[] {"Ryu", "Akuma"} 

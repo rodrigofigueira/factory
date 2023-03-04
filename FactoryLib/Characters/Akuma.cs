@@ -6,11 +6,14 @@ namespace FactoryLib.Characters
     {
         public string Name => "Akuma";
 
-        public Move AntiAir()
+        public string ImgMain => "https://www.fightersgeneration.com/characters/akuma-alphastand.gif";
+
+        public Move DragonPunch()
         {
             return new Move
             {
-                Name = "Roris do Akuma"
+                Name = "Shoryuken",
+                ImagePath = "https://www.fightersgeneration.com/characters/akuma-ts-shoryu1.gif"
             };
         }
 
@@ -18,7 +21,8 @@ namespace FactoryLib.Characters
         {
             return new Move
             {
-                Name = "Gadouken"
+                Name = "Gadouken",
+                ImagePath = "https://www.fightersgeneration.com/characters/akumahado.gif"
             };
         }
     }
