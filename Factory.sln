@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryTests", "FacotyTests\FactoryTests.csproj", "{D0E74D23-C9E5-4472-A764-FDCAABC2CAC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryTests", "FactoryTests\FactoryTests.csproj", "{D0E74D23-C9E5-4472-A764-FDCAABC2CAC4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryLib", "FactoryLib\FactoryLib.csproj", "{F5C85C9E-A163-4239-8D32-1689CB31FEF4}"
 EndProject
