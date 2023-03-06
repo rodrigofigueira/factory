@@ -2,6 +2,8 @@
 ## Projeto lista fighting games, seus shotos fighters e seus golpes
 Projeto motivado pelo estudo do Design Pattern Abstract Method e Simple Factory
 
+
+![My Image](main.png)
 ## Tecnologias utilizadas
 
 - Dotnet 7

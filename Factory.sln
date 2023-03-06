@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryTests", "FactoryTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryLib", "FactoryLib\FactoryLib.csproj", "{F5C85C9E-A163-4239-8D32-1689CB31FEF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryUI", "FactoryUI\FactoryUI.csproj", "{3F9EEC97-A79E-454A-AAF5-2A0DB86EB325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryUI", "FactoryUI\FactoryUI.csproj", "{3F9EEC97-A79E-454A-AAF5-2A0DB86EB325}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
