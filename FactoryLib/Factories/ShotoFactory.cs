@@ -4,11 +4,11 @@ namespace FactoryLib.Factories
 {
     public abstract class ShotoFactory
     {
-        protected ShotoFighter? fighter;
+        protected ShotoFighter fighter;
 
         public abstract void CreateCharacter(string type);
 
-        public ShotoFighter? GetFighter => fighter;
+        public ShotoFighter GetFighter => fighter;
 
     }
 }
