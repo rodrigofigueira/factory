@@ -10,16 +10,16 @@ O objetivo principal é ter a flexibilidade de adicionar um novo personagem ou u
 #Como incluir um novo personagem
 
 ![My Image](folder_to_add_character.png)
-Criar a classe do novo personagem
+*Criar a classe do novo personagem*
 
 ![My Image](factory_to_add_character.png)
-Adicionar a opção para criar novo personagem na sua fábrica
+*Adicionar a opção para criar novo personagem na sua fábrica*
 
 ![My Image](array_to_add_character.png)
-Adicionar a nova entrada para listar no form (Obs.: preciso refatorar essa parte)
+*Adicionar a nova entrada para listar no form (Obs.: preciso refatorar essa parte)*
 
 ![My Image](robert_added.png)
-Form com o novo personagem adicionado.
+*Form com o novo personagem adicionado.*
 
 
 ## Tecnologias utilizadas
