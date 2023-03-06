@@ -36,6 +36,21 @@ O objetivo principal é ter a flexibilidade de adicionar um novo personagem ou u
 - Clean Code
 - Null Object Pattern
 
+## Novas implementações
+
+- [ ] Substituir código de tipo por classe
+- [ ] Remover hardcoded da lista de Game em Program
+
+## Referências
+
+- Use a Cabeça Padrões de Projeto
+- Programacao no Mundo Real Design Patterns Vol 1 Edicao 2
+- Clean Code: A Handbook of Agile Software Craftsmanship
+- Princípios, Padrões e Práticas Ágeis em C#
+- https://www.thiengo.com.br/refatoracao-de-codigo-substituir-codigo-de-tipo-por-classe
+- https://www.thiengo.com.br/padrao-de-projeto-factory-method
+- https://www.thiengo.com.br/padrao-de-projeto-simple-factory
+
 ## License
 
 MIT
