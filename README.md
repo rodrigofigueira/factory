@@ -7,26 +7,25 @@ Projeto motivado pelo estudo do Design Pattern Abstract Method e Simple Factory
 
 O objetivo principal é ter a flexibilidade de adicionar um novo personagem ou uma nova fábrica sem alterar o código existente.
 
-#Como incluir um novo personagem
+## Como incluir um novo personagem
 
-![My Image](folder_to_add_character.png)
+![My Image](folder_to_add_character.png)<br />
 *Criar a classe do novo personagem*
 
-![My Image](factory_to_add_character.png)
+![My Image](factory_to_add_character.png)<br />
 *Adicionar a opção para criar novo personagem na sua fábrica*
 
-![My Image](array_to_add_character.png)
+![My Image](array_to_add_character.png)<br />
 *Adicionar a nova entrada para listar no form (Obs.: preciso refatorar essa parte)*
 
-![My Image](robert_added.png)
+![My Image](robert_added.png)<br />
 *Form com o novo personagem adicionado.*
-
 
 ## Tecnologias utilizadas
 
 - Dotnet 7
 - Windows Forms para UI
-- xUnit
+- xUnit 
 
 ## Boas práticas e padrões utilizados
 
