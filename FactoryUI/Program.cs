@@ -16,7 +16,7 @@ namespace FactoryUI
                           FightersName = new string[] {"Ryu", "Akuma"} 
                 },
                 new Game{ Name="The King of Fighters",
-                          FightersName = new string[] {"Ryo", "Kyo"} 
+                          FightersName = new string[] {"Ryo", "Kyo", "Robert Garcia"} 
                 },
             };
             ApplicationConfiguration.Initialize();

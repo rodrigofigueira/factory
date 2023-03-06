@@ -14,6 +14,10 @@ namespace FactoryLib.Factories
             {
                 fighter = new Ryo();
             }
+            else if(type.ToUpper().Equals("ROBERT GARCIA"))
+            {
+                fighter = new RobertGarcia();
+            }
         }
     }
 }
