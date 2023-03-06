@@ -4,13 +4,13 @@ using FactoryLib.Interfaces;
 
 namespace FactoryUI
 {
-    public partial class frmMain : Form
+    public partial class FrmMain : Form
     {
         private Game[] _games;
         private ShotoFighter _fighter = null!;
         private ShotoFactory _factory = null!;
 
-        public frmMain(Game[] games)
+        public FrmMain(Game[] games)
         {
             InitializeComponent();
             _games = games;
@@ -19,40 +19,30 @@ namespace FactoryUI
 
         private void LoadGamesComboBox()
         {
-            cbChoiceGame.DataSource = _games.Select(g => g.Name).ToList();
+            foreach (var game in _games)
+            {
+                CbChoiceGame.AddItem(game.Name);
+            }
         }
 
-        private void cbChoiceGame_SelectedIndexChanged(object sender, EventArgs e)
+        private void CbChoiceGame_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string gameName = cbChoiceGame.Text;
+            string gameName = CbChoiceGame.Text;
 
-            cbChoiceFighter.ClearItemAndText();
+            CbChoiceFighter.ClearItemsAndText();
             LoadFighterComboBox(gameName);
             CreateFactory(gameName);
             ClearMoveName();
             ClearImage();
         }
 
-        private void CreateFactory(string _gameName)
-        {
-            _factory = SimpleShotoFighterFactory.Create(_gameName);
-        }
-
         private void LoadFighterComboBox(string gameName)
         {
             string[] fightersNames = GetFightersNames(gameName);
-
-            if (fightersNames is not null)
-                FillFighterComboBox(fightersNames);
-
+            FillFighterComboBox(fightersNames);
             ClearImage();
             ClearMoveName();
         }
-
-        private void ClearImage()
-        {
-            pbFighter.ImageLocation = string.Empty;
-        }        
 
         private string[] GetFightersNames(string gameName)
         {
@@ -63,23 +53,38 @@ namespace FactoryUI
             if (gameSelected is null || gameSelected.FightersName is null)
                 return new string[] { "Not found" };
 
-
             return gameSelected.FightersName;
         }
 
         private void FillFighterComboBox(string[] fightersNames)
         {
-            cbChoiceFighter.ClearItemAndText();
+            CbChoiceFighter.ClearItemsAndText();
+
             foreach (string fighterName in fightersNames)
             {
-                cbChoiceFighter.AddItem(fighterName);
+                CbChoiceFighter.AddItem(fighterName);
             }
 
         }
 
-        private void cbChoiceFighter_SelectedIndexChanged(object sender, EventArgs e)
+        private void CreateFactory(string _gameName)
         {
-            string fighterName = cbChoiceFighter.Text;
+            _factory = SimpleShotoFighterFactory.Create(_gameName);
+        }
+
+        private void ClearImage()
+        {
+            PbFighter.ImageLocation = string.Empty;
+        }
+
+        private void ClearMoveName()
+        {
+            LblMoveName.Clear();
+        }
+
+        private void CbChoiceFighter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string fighterName = CbChoiceFighter.Text;
             CreateFighter(fighterName);
             SetImage(_fighter.ImgMain);
             ClearMoveName();
@@ -91,40 +96,40 @@ namespace FactoryUI
             _fighter = _factory.GetFighter;
         }
 
-        private void ClearMoveName()
+        private void SetImage(string imgPath)
         {
-            lblMoveName.Clear();
+            PbFighter.ImageLocation = imgPath;
         }
 
         private void SetMoveName(string imgPath)
         {
-            lblMoveName.Text = imgPath;
+            LblMoveName.Text = imgPath;
         }
 
-        private void SetImage(string imgPath)
-        {
-            pbFighter.ImageLocation = imgPath;
-        }
-
-        private void btnFireball_Click(object sender, EventArgs e)
+        private void BtnFireball_Click(object sender, EventArgs e)
         {
             Move fireball = _fighter.Fireball();
-            SetMoveName(fireball.Name);
-            SetImage(fireball.ImagePath);
+            SetDataFighter(fireball);
         }
 
-        private void btnDragonPunch_Click(object sender, EventArgs e)
+        private void BtnDragonPunch_Click(object sender, EventArgs e)
         {
             Move dragonPunch = _fighter.DragonPunch();
-            SetMoveName(dragonPunch.Name);
-            SetImage(dragonPunch.ImagePath);
+            SetDataFighter(dragonPunch);
+        }
+        
+        private void SetDataFighter(Move move)
+        {
+            SetMoveName(move.Name);
+            SetImage(move.ImagePath);
         }
 
-        private void btnShowMainImage_Click(object sender, EventArgs e)
+        private void BtnShowMainImage_Click(object sender, EventArgs e)
         {
             SetImage(_fighter.ImgMain);
-            lblMoveName.Clear();
+            LblMoveName.Clear();
         }
 
     }
+
 }

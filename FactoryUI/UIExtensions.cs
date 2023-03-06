@@ -7,7 +7,7 @@
             comboBox.Items.Add(value);  
         }
 
-        public static void ClearItemAndText(this ComboBox comboBox)
+        public static void ClearItemsAndText(this ComboBox comboBox)
         {
             comboBox.Items.Clear();
             comboBox.Text = string.Empty;

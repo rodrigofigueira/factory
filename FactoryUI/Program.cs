@@ -20,7 +20,7 @@ namespace FactoryUI
                 },
             };
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmMain(games));
+            Application.Run(new FrmMain(games));
         }
     }
 }
