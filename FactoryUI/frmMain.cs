@@ -6,15 +6,20 @@ namespace FactoryUI
 {
     public partial class FrmMain : Form
     {
-        private Game[] _games;
+        private Game[] _games = null!;
         private ShotoFighter _fighter = null!;
         private ShotoFactory _factory = null!;
 
         public FrmMain(Game[] games)
         {
             InitializeComponent();
-            _games = games;
+            SetArrayOfGames(games);
             LoadGamesComboBox();
+        }
+
+        private void SetArrayOfGames(Game[] games)
+        {
+            _games = games;
         }
 
         private void LoadGamesComboBox()
