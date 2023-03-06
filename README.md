@@ -40,6 +40,7 @@ O objetivo principal é ter a flexibilidade de adicionar um novo personagem ou u
 
 - [ ] Substituir código de tipo por classe
 - [ ] Remover hardcoded da lista de Game em Program
+- [ ] Adicionar um gif das funções
 
 ## Referências
 
