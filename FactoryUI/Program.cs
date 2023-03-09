@@ -10,15 +10,7 @@ namespace FactoryUI
         [STAThread]
         static void Main()
         {
-            //todo: ver uma forma externa
-            Game[] games = new Game[] {
-                new Game{ Name="Street Fighter",
-                          FightersName = new string[] {"Ryu", "Akuma"} 
-                },
-                new Game{ Name="The King of Fighters",
-                          FightersName = new string[] {"Ryo", "Kyo", "Robert Garcia"} 
-                },
-            };
+            Game[] games = Games.Get(); 
             ApplicationConfiguration.Initialize();
             Application.Run(new FrmMain(games));
         }

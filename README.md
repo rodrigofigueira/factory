@@ -36,11 +36,10 @@ O objetivo principal é ter a flexibilidade de adicionar um novo personagem ou u
 - Clean Code
 - Null Object Pattern
 
-## Novas implementações
+## Melhorias que podem ser empregadas
 
-- [ ] Substituir código de tipo por classe
-- [ ] Remover hardcoded da lista de Game em Program
-- [ ] Adicionar um gif das funções
+- Substituir código de tipo por classe
+
 
 ## Referências
 
